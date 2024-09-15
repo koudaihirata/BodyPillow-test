@@ -17,10 +17,11 @@ struct ContentView: View {
                 )
                 .ignoresSafeArea()
             ZStack {
-                Text("ここにロゴ")
-                    .frame(width: 100, height: 100)
-                    .background(Color.white)
-                    .cornerRadius(10)
+                Image("logo")
+                    .resizable()
+                    .frame(width: 100,height: 100)
+                    .scaledToFit()
+                    .shadow(color: .gray, radius: 10, x: 1, y: 1)
             }
         }
     }
