@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40650212C963F4C00D3480A /* setCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40650202C963F4C00D3480A /* setCom.swift */; };
+		A40650232C9640D100D3480A /* setPairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40650222C9640D100D3480A /* setPairing.swift */; };
+		A40650272C96872E00D3480A /* setWifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40650262C96872E00D3480A /* setWifi.swift */; };
+		A40650292C96B4B100D3480A /* setSampling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40650282C96B4B100D3480A /* setSampling.swift */; };
 		A49AB3992C95E071003A3D6F /* BodyPillow_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AB3982C95E071003A3D6F /* BodyPillow_testApp.swift */; };
 		A49AB39B2C95E071003A3D6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AB39A2C95E071003A3D6F /* ContentView.swift */; };
 		A49AB39D2C95E074003A3D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49AB39C2C95E074003A3D6F /* Assets.xcassets */; };
@@ -14,6 +18,8 @@
 		A49AB3AA2C95E075003A3D6F /* BodyPillow_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AB3A92C95E075003A3D6F /* BodyPillow_testTests.swift */; };
 		A49AB3B42C95E075003A3D6F /* BodyPillow_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AB3B32C95E075003A3D6F /* BodyPillow_testUITests.swift */; };
 		A49AB3B62C95E075003A3D6F /* BodyPillow_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AB3B52C95E075003A3D6F /* BodyPillow_testUITestsLaunchTests.swift */; };
+		A49AB3C32C960152003A3D6F /* settingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AB3C22C960151003A3D6F /* settingView.swift */; };
+		A49AB3C62C9605E2003A3D6F /* Btn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AB3C52C9605E2003A3D6F /* Btn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A40650202C963F4C00D3480A /* setCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setCom.swift; sourceTree = "<group>"; };
+		A40650222C9640D100D3480A /* setPairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setPairing.swift; sourceTree = "<group>"; };
+		A40650262C96872E00D3480A /* setWifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setWifi.swift; sourceTree = "<group>"; };
+		A40650282C96B4B100D3480A /* setSampling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setSampling.swift; sourceTree = "<group>"; };
 		A49AB3952C95E071003A3D6F /* BodyPillow-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BodyPillow-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49AB3982C95E071003A3D6F /* BodyPillow_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPillow_testApp.swift; sourceTree = "<group>"; };
 		A49AB39A2C95E071003A3D6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +54,8 @@
 		A49AB3AF2C95E075003A3D6F /* BodyPillow-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BodyPillow-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49AB3B32C95E075003A3D6F /* BodyPillow_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPillow_testUITests.swift; sourceTree = "<group>"; };
 		A49AB3B52C95E075003A3D6F /* BodyPillow_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPillow_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A49AB3C22C960151003A3D6F /* settingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingView.swift; sourceTree = "<group>"; };
+		A49AB3C52C9605E2003A3D6F /* Btn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Btn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +106,12 @@
 		A49AB3972C95E071003A3D6F /* BodyPillow-test */ = {
 			isa = PBXGroup;
 			children = (
+				A49AB3C42C9605B8003A3D6F /* components */,
 				A49AB3982C95E071003A3D6F /* BodyPillow_testApp.swift */,
 				A49AB39A2C95E071003A3D6F /* ContentView.swift */,
 				A49AB39C2C95E074003A3D6F /* Assets.xcassets */,
 				A49AB39E2C95E074003A3D6F /* Preview Content */,
+				A49AB3C22C960151003A3D6F /* settingView.swift */,
 			);
 			path = "BodyPillow-test";
 			sourceTree = "<group>";
@@ -125,6 +139,18 @@
 				A49AB3B52C95E075003A3D6F /* BodyPillow_testUITestsLaunchTests.swift */,
 			);
 			path = "BodyPillow-testUITests";
+			sourceTree = "<group>";
+		};
+		A49AB3C42C9605B8003A3D6F /* components */ = {
+			isa = PBXGroup;
+			children = (
+				A49AB3C52C9605E2003A3D6F /* Btn.swift */,
+				A40650202C963F4C00D3480A /* setCom.swift */,
+				A40650222C9640D100D3480A /* setPairing.swift */,
+				A40650262C96872E00D3480A /* setWifi.swift */,
+				A40650282C96B4B100D3480A /* setSampling.swift */,
+			);
+			name = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40650212C963F4C00D3480A /* setCom.swift in Sources */,
+				A40650232C9640D100D3480A /* setPairing.swift in Sources */,
+				A49AB3C62C9605E2003A3D6F /* Btn.swift in Sources */,
+				A40650292C96B4B100D3480A /* setSampling.swift in Sources */,
+				A40650272C96872E00D3480A /* setWifi.swift in Sources */,
 				A49AB39B2C95E071003A3D6F /* ContentView.swift in Sources */,
+				A49AB3C32C960152003A3D6F /* settingView.swift in Sources */,
 				A49AB3992C95E071003A3D6F /* BodyPillow_testApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
