@@ -11,7 +11,8 @@ import SwiftUI
 struct BodyPillow_testApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView()
+//            RootView()
+            ResultView()
         }
     }
 }

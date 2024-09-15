@@ -13,6 +13,9 @@ struct circleCom: View {
 
     var body: some View {
         ZStack {
+            Circle()
+                .fill(Color("Btn2Color"))
+            
             // 背景の円（全体のゲージ）
             Circle()
                 .stroke(Color("DarkMainColor").opacity(0.2), lineWidth: 20)

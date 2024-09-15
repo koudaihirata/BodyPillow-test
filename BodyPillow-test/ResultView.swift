@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ResultView: View {
+    @State private var userSleepTime: Double = 9
+    @State private var sleepData: [CGFloat] = [1,0.8, 0.2, 0.7, 0.3, 0.4, 0.9, 0.6, 0.1, 0.5, 1, 1, 1]
+    
     var body: some View {
         ZStack {
             LinearGradient(
@@ -17,7 +20,7 @@ struct ResultView: View {
             )
             .ignoresSafeArea()
             
-            VStack {
+            VStack(spacing: 32) {
                 HStack(spacing: 72) {
                     Image("Alarm")
                     
@@ -61,8 +64,7 @@ struct ResultView: View {
                     .cornerRadius(20)
                 }
                 
-                
-                
+                circleCom(sleepTime: userSleepTime)
                 
                 VStack{
                     Text("昨日は寝苦しかったみたいですね")
@@ -79,7 +81,26 @@ struct ResultView: View {
                 .cornerRadius(20)
                 
                 ZStack{
-                   
+                    HStack(spacing: 0) {
+                        VStack(spacing: 38){
+                            Text("目覚め")
+                                .font(.custom("A P-OTF Bunkyu Gothic Pr6", size: 10))
+                                .bold()
+                                .foregroundStyle(.white)
+                            Text("浅い")
+                                .font(.custom("A P-OTF Bunkyu Gothic Pr6", size: 10))
+                                .bold()
+                                .foregroundStyle(.white)
+                            Text("深い")
+                                .font(.custom("A P-OTF Bunkyu Gothic Pr6", size: 10))
+                                .bold()
+                                .foregroundStyle(.white)
+                        }
+                        .offset(x: 28,y: -8)
+                        
+                        SleepGraphCom(sleepData: sleepData)
+                            .offset(x: 12,y: 30)
+                    }
                 }
                 .frame(width: 350,height: 200)
                 .background(Color("DarkMainColor"))
