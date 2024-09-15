@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct settingView: View {
+    @State private var currentPage = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            LinearGradient(
+                gradient: Gradient(colors: [Color("MainColor"), Color("SubColor")]),
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .ignoresSafeArea()
+            
+            if currentPage == 0 {
+                setCom1(currentPage: $currentPage)
+            } else if currentPage == 1 {
+                setCom2(currentPage: $currentPage)
+            } else if currentPage == 2 {
+                setPairing(currentPage: $currentPage)
+            } else if currentPage == 3 {
+                setSampling()
+            }
+        }
     }
 }
 
