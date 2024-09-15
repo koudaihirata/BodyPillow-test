@@ -22,6 +22,13 @@ struct RootView: View {
     
     var body: some View {
         ZStack {
+            LinearGradient(
+                gradient: Gradient(colors: [Color("MainColor"), Color("SubColor")]),
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .ignoresSafeArea()
+            
             if showContentView {
                 ContentView()
                     .transition(.opacity)
@@ -32,13 +39,12 @@ struct RootView: View {
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                withAnimation(.easeInOut(duration: 1.5)) {
+                withAnimation(.easeInOut(duration: 2.5)) {
                     showContentView = false
                 }
 
-                // ContentViewがフェードアウトした後にsettingViewをフェードイン
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                    withAnimation(.easeInOut(duration: 1.5)) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    withAnimation(.easeInOut(duration: 2.5)) {
                         showSettingView = true
                     }
                 }

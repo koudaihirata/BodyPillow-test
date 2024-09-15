@@ -20,6 +20,8 @@
 		A49AB3B62C95E075003A3D6F /* BodyPillow_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AB3B52C95E075003A3D6F /* BodyPillow_testUITestsLaunchTests.swift */; };
 		A49AB3C32C960152003A3D6F /* settingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AB3C22C960151003A3D6F /* settingView.swift */; };
 		A49AB3C62C9605E2003A3D6F /* Btn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AB3C52C9605E2003A3D6F /* Btn.swift */; };
+		A4D3259C2C9759A80064D58D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3259B2C9759A70064D58D /* ResultView.swift */; };
+		A4D3259E2C9760000064D58D /* circleCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3259D2C9760000064D58D /* circleCom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		A49AB3B52C95E075003A3D6F /* BodyPillow_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPillow_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A49AB3C22C960151003A3D6F /* settingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingView.swift; sourceTree = "<group>"; };
 		A49AB3C52C9605E2003A3D6F /* Btn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Btn.swift; sourceTree = "<group>"; };
+		A4D3259B2C9759A70064D58D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		A4D3259D2C9760000064D58D /* circleCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleCom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 				A49AB39C2C95E074003A3D6F /* Assets.xcassets */,
 				A49AB39E2C95E074003A3D6F /* Preview Content */,
 				A49AB3C22C960151003A3D6F /* settingView.swift */,
+				A4D3259B2C9759A70064D58D /* ResultView.swift */,
 			);
 			path = "BodyPillow-test";
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 				A40650222C9640D100D3480A /* setPairing.swift */,
 				A40650262C96872E00D3480A /* setWifi.swift */,
 				A40650282C96B4B100D3480A /* setSampling.swift */,
+				A4D3259D2C9760000064D58D /* circleCom.swift */,
 			);
 			name = components;
 			sourceTree = "<group>";
@@ -285,8 +291,10 @@
 			files = (
 				A40650212C963F4C00D3480A /* setCom.swift in Sources */,
 				A40650232C9640D100D3480A /* setPairing.swift in Sources */,
+				A4D3259C2C9759A80064D58D /* ResultView.swift in Sources */,
 				A49AB3C62C9605E2003A3D6F /* Btn.swift in Sources */,
 				A40650292C96B4B100D3480A /* setSampling.swift in Sources */,
+				A4D3259E2C9760000064D58D /* circleCom.swift in Sources */,
 				A40650272C96872E00D3480A /* setWifi.swift in Sources */,
 				A49AB39B2C95E071003A3D6F /* ContentView.swift in Sources */,
 				A49AB3C32C960152003A3D6F /* settingView.swift in Sources */,

@@ -12,12 +12,6 @@ struct settingView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(
-                gradient: Gradient(colors: [Color("MainColor"), Color("SubColor")]),
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            .ignoresSafeArea()
             
             if currentPage == 0 {
                 setCom1(currentPage: $currentPage)
