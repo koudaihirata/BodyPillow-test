@@ -23,7 +23,6 @@
 		A4D3259C2C9759A80064D58D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3259B2C9759A70064D58D /* ResultView.swift */; };
 		A4D3259E2C9760000064D58D /* circleCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3259D2C9760000064D58D /* circleCom.swift */; };
 		A4D325A02C9768E30064D58D /* sleepGraphCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3259F2C9768E30064D58D /* sleepGraphCom.swift */; };
-		A4D325A22C977B4B0064D58D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D325A12C977B4B0064D58D /* HomeView.swift */; };
 		A4D325A42C977BAE0064D58D /* modalCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D325A32C977BAE0064D58D /* modalCom.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +63,6 @@
 		A4D3259B2C9759A70064D58D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		A4D3259D2C9760000064D58D /* circleCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleCom.swift; sourceTree = "<group>"; };
 		A4D3259F2C9768E30064D58D /* sleepGraphCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sleepGraphCom.swift; sourceTree = "<group>"; };
-		A4D325A12C977B4B0064D58D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A4D325A32C977BAE0064D58D /* modalCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modalCom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +121,6 @@
 				A49AB39E2C95E074003A3D6F /* Preview Content */,
 				A49AB3C22C960151003A3D6F /* settingView.swift */,
 				A4D3259B2C9759A70064D58D /* ResultView.swift */,
-				A4D325A12C977B4B0064D58D /* HomeView.swift */,
 			);
 			path = "BodyPillow-test";
 			sourceTree = "<group>";
@@ -308,7 +305,6 @@
 				A4D325A02C9768E30064D58D /* sleepGraphCom.swift in Sources */,
 				A40650272C96872E00D3480A /* setWifi.swift in Sources */,
 				A49AB39B2C95E071003A3D6F /* ContentView.swift in Sources */,
-				A4D325A22C977B4B0064D58D /* HomeView.swift in Sources */,
 				A49AB3C32C960152003A3D6F /* settingView.swift in Sources */,
 				A49AB3992C95E071003A3D6F /* BodyPillow_testApp.swift in Sources */,
 			);

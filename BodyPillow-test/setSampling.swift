@@ -178,7 +178,8 @@ class SamplingViewModel: ObservableObject {
 
 struct setSampling: View {
     @StateObject var viewModel = SamplingViewModel()
-    
+    @State private var isShowingResultView = false // 遷移用のフラグ
+
     var body: some View {
         VStack(spacing: 60) {
             VStack(spacing: 60) {
@@ -239,19 +240,35 @@ struct setSampling: View {
                     }
                 }
                 
-                // Current recording phrase
-                Text(viewModel.recordingPhrases[viewModel.currentRecordingIndex])
-                    .font(.custom("A P-OTF Bunkyu Gothic Pr6", size: 24))
-                    .bold()
-                    .foregroundStyle(.white)
-                    .offset(y: 40)
+                // Current recording phrase or completion message
+                if viewModel.recordedFiles.count == 3 {
+                    Text("録音が完了しました")
+                        .font(.custom("A P-OTF Bunkyu Gothic Pr6", size: 24))
+                        .bold()
+                        .foregroundColor(.red)
+                        .offset(y: 40)
+                } else {
+                    Text(viewModel.recordingPhrases[viewModel.currentRecordingIndex])
+                        .font(.custom("A P-OTF Bunkyu Gothic Pr6", size: 24))
+                        .bold()
+                        .foregroundStyle(.white)
+                        .offset(y: 40)
+                }
             }
             .offset(y: -32)
             
             Spacer()
             
             VStack {
-                if viewModel.showStartButton {
+                if viewModel.recordedFiles.count == 3 {
+                    // 録音が完了したら ResultView に画面遷移するボタンを表示
+                    Btn(label: "完了", action: {
+                        isShowingResultView = true // フルスクリーンのResultViewへ遷移
+                    })
+                    .fullScreenCover(isPresented: $isShowingResultView) {
+                        ResultView()
+                    }
+                } else if viewModel.showStartButton {
                     Button(action: {
                         viewModel.showStartButton = false
                         viewModel.startCountdown()
@@ -313,4 +330,3 @@ struct setSampling_Previews: PreviewProvider {
         }
     }
 }
-
